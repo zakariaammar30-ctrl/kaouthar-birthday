@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Happy Birthday  habebate Kaoutahr 💗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Music -->
+  <audio id="birthdayMusic" src="assets/birthday.mp3" loop></audio>
+
+  <button class="music-btn" id="musicBtn" aria-label="Play music">
+    ♫ <span id="musicLabel">Play music</span>
+  </button>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <div class="top-label">
+        ✧ A LITTLE SURPRISE FOR YOU ✧
+      </div>
+
+      <div class="hero-heart">♡</div>
+
+      <p class="small-text">Today is all about you, my love</p>
+
+      <h1>Happy Birthday<br>
+        <span class="name">Kaoutahr</span>
+      </h1>
+
+      <p class="hero-message">
+        To the most beautiful soul in my world,
+        today is your special day. You deserve
+        all the happiness in the universe. 💗
+      </p>
+
+      <button class="primary-btn" id="startBtn">
+        Open your surprise
+        <span>♡</span>
+      </button>
+
+      <div class="scroll-hint">
+        SCROLL TO DISCOVER
+        <span>↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIFT SECTION -->
+  <section class="gift-section section" id="gift">
+    <div class="section-heading">
+      <span class="eyebrow">JUST FOR YOU</span>
+      <h2>A little gift <em>for my love</em></h2>
+      <p>Something special is waiting for you...</p>
+    </div>
+
+    <div class="gift-wrapper">
+      <div class="gift" id="giftBox" role="button"
+           tabindex="0" aria-label="Open your birthday gift">
+        <div class="gift-glow"></div>
+        <div class="gift-lid">
+          <div class="gift-bow"></div>
+        </div>
+        <div class="gift-body">
+          <div class="gift-ribbon"></div>
+          <div class="gift-ribbon-vertical"></div>
+          <span class="gift-heart">♥</span>
+        </div>
+      </div>
+
+      <p class="gift-instruction" id="giftInstruction">
+        Tap the gift to open it 🎁
+      </p>
+    </div>
+
+    <div class="gift-message hidden" id="giftMessage">
+      <span class="gift-message-heart">💗</span>
+      <h3>You are my favorite gift</h3>
+      <p>
+        If I could give you one thing in life,
+        I would give you the ability to see yourself
+        through my eyes. You would know how special
+        and precious you are to me.
+      </p>
+      <a href="#memories" class="text-link">Discover our memories ↓</a>
+    </div>
+  </section>
+
+  <!-- MEMORIES -->
+  <section class="memories-section section" id="memories">
+    <div class="section-heading">
+      <span class="eyebrow">OUR LITTLE WORLD</span>
+      <h2>Beautiful <em>memories</em></h2>
+      <p>Every little moment with you is worth remembering.</p>
+    </div>
+
+    <div class="gallery">
+
+      <div class="memory-card">
+        <div class="photo-frame">
+          <img src="assets/photo1.jpeg"
+               alt="A beautiful memory"
+               loading="lazy">
+          <span class="photo-heart">♡</span>
+        </div>
+        <div class="memory-caption">
+          <h3>Our special moments</h3>
+          <p>Some moments become memories. Some memories become treasures.</p>
+        </div>
+      </div>
+
+      <div class="memory-card memory-card-middle">
+        <div class="photo-frame">
+          <img src="assets/photo2.jpeg"
+               alt="A lovely moment"
+               loading="lazy">
+          <span class="photo-heart">♡</span>
+        </div>
+        <div class="memory-caption">
+          <h3>Your beautiful smile</h3>
+          <p>One smile from you can make my whole day brighter.</p>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <div class="photo-frame">
+          <img src="assets/photo3.jpeg"
+               alt="A precious memory"
+               loading="lazy">
+          <span class="photo-heart">♡</span>
+        </div>
+        <div class="memory-caption">
+          <h3>Forever in my heart</h3>
+          <p>My favorite place will always be wherever you are.</p>
+        </div>
+      </div>
+
+    </div>
+    <p class="gallery-note">
+      Replace these photos with your own favorite memories 📸
+    </p>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section class="letter-section section" id="letter">
+    <div class="section-heading">
+      <span class="eyebrow">A SECRET MESSAGE</span>
+      <h2>Words from <em>my heart</em></h2>
+      <p>There's something I've been wanting to tell you...</p>
+    </div>
+
+    <div class="envelope-container">
+      <div class="envelope" id="envelope"
+           role="button" tabindex="0"
+           aria-label="Open your love letter">
+
+        <div class="envelope-back"></div>
+        <div class="letter-paper">
+          <span class="letter-top-heart">♡</span>
+          <p>To my beautiful Kaoutahr,</p>
+          <span class="letter-preview">A little message from my heart...</span>
+        </div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal">♥</div>
+      </div>
+      <p class="letter-hint" id="letterHint">
+        Tap the envelope to read your letter 💌
+      </p>
+    </div>
+
+    <div class="letter-content hidden" id="letterContent">
+      <div class="letter-inner">
+        <span class="letter-decoration">♡</span>
+        <h3>My dearest Kaoutahr,</h3>
+
+        <p>
+          Happy birthday, my love. Today is a reminder
+          of how lucky I am to have you in my life.
+        </p>
+
+        <p>
+          I hope this new chapter brings you endless
+          happiness, beautiful opportunities, peace,
+          and everything your heart wishes for.
+        </p>
+
+        <p>
+          Thank you for being the wonderful person you are,
+          for your smile, your kindness, and all the little
+          things that make you so special to me.
+        </p>
+
+        <p>
+          No matter how many birthdays pass, I hope you
+          always remember that you deserve to be loved,
+          appreciated, and celebrated every single day.
+        </p>
+
+        <p>
+          I wish I could give you the whole world,
+          but for now, I hope this little surprise
+          brings a big smile to your face.
+        </p>
+
+        <p class="letter-signature">
+          With all my love, always ♡<br>
+          <span>Your Zakariae</span>
+        </p>
+
+        <div class="letter-bottom-heart">♥</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL BIRTHDAY WISH -->
+  <section class="final-section">
+    <div class="final-content">
+      <div class="final-stars">✧ ˚ · . ✧</div>
+      <span class="eyebrow">ON YOUR SPECIAL DAY</span>
+      <h2>Make a wish,<br><em>my princess</em> ✨</h2>
+      <p>
+        May all your dreams come true,
+        and may your beautiful smile never fade.
+      </p>
+
+      <button class="primary-btn final-btn" id="wishBtn">
+        Make a wish ♡
+      </button>
+
+      <p class="final-love">Made with love, just for you 💗</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Forever yours ♡</p>
+    <p class="footer-name">Kaoutahr & Zakariae</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
