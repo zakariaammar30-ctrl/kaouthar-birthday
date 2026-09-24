@@ -321,7 +321,7 @@ wishBtn.addEventListener("click", () => {
   // Show a little final surprise
   setTimeout(() => {
     alert(
-      "Happy Birthday, my beautiful Kaoutahr! 💗\n\n" +
+      "Happy Birthday, my beautiful Kaouthar! 💗\n\n" +
       "May all your wishes come true.\n" +
       "I love you! — Zakariae ♡"
     );
@@ -363,4 +363,4 @@ document.querySelectorAll(".photo-frame img").forEach(img => {
 // END
 // =========================================
 
-console.log("Birthday surprise for Kaoutahr is ready! 💗");
+console.log("Birthday surprise for Kaouthar is ready! 💗");
